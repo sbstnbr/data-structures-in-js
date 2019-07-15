@@ -1,0 +1,20 @@
+{
+  "name": "data-structures-in-js",
+  "version": "1.0.0",
+  "description": "Data structures implementations in JS",
+  "main": "index.js",
+  "author": "Sebastien Bro <brosebastien@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/register": "^7.4.4",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  },
+  "scripts": {
+    "test": "mocha **/*.spec.js --require @babel/register",
+    "test:watch": "mocha **/*.spec.js --require @babel/register --watch"
+  }
+}
