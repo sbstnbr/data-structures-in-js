@@ -7,14 +7,18 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@babel/core": "^7.5.4",
-    "@babel/preset-env": "^7.5.4",
-    "@babel/register": "^7.4.4",
+    "@babel/runtime": "^7.6.3",
     "chai": "^4.2.0",
     "mocha": "^6.1.4"
   },
   "scripts": {
     "test": "mocha *.spec.js --require @babel/register --recursive",
     "test:watch": "mocha --require @babel/register --watch --recursive 'src/**/*.spec.js'"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.4",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/register": "^7.4.4"
   }
 }
